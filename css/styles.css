@@ -89,8 +89,10 @@ body {
 }
 /* ----------HEADER---------- */
 .header {
-  display: flex;
   border-bottom: 1px solid #ececec;
+}
+.header-content {
+  display: flex;
   align-items: center;
 }
 .header-logo {
@@ -185,7 +187,7 @@ body {
 .advatages-list-item {
   flex-basis: 270px;
 }
-.advatages-list-item+.advatages-list-item {
+.advatages-list-item + .advatages-list-item {
   margin-left: var(--standart-gap);
 }
 .advantages-item-title {
@@ -201,10 +203,13 @@ body {
   color: var(--second-color);
 }
 /* ----------WHAT WE DO---------- */
+.what-we-do-section {
+  padding-top: 0;
+}
 .what-we-do-list {
   display: flex;
 }
-.what-we-do-list-item+.what-we-do-list-item{
+.what-we-do-list-item + .what-we-do-list-item {
   margin-left: var(--standart-gap);
 }
 /* ----------OUR TEAM---------- */
@@ -217,18 +222,18 @@ body {
 }
 .team-list-item {
   text-align: center;
-  padding-bottom: var(--standart-gap);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
 }
-.team-list-item+.team-list-item{
+.team-list-item + .team-list-item {
   margin-left: var(--standart-gap);
 }
-.team-list-item-img {
-  margin-bottom: var(--standart-gap);
+.team-item-desc {
+  padding-top: var(--standart-gap);
+  padding-bottom: var(--standart-gap);
 }
 .team-member-name {
   padding: 0;
@@ -280,26 +285,28 @@ body {
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--standart-gap));
   margin-left: calc(-1 * var(--standart-gap));
-  font-size 0;
 }
 .projects-item {
   flex-basis: 370px;
   margin-top: var(--standart-gap);
   margin-left: var(--standart-gap);
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #eeeeee;
 }
 .projects-item-link {
   display: block;
-  margin-bottom: 20px;
 }
-.projects-item-img {
-  margin-bottom: 20px;
+.project-item-desc-cont {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+
+  border: 1px solid #eeeeee;
+  border-top: 0;
 }
 .project-item-title {
   margin: 0;
   margin-bottom: 4px;
-  margin-left: 24px;
-  
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -307,7 +314,6 @@ body {
 }
 .project-item-desc {
   margin: 0;
-  margin-left: 24px;
 
   font-size: 16px;
   line-height: 1.87;
